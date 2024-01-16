@@ -1,0 +1,50 @@
+2024-01-12 11:06:53.030 EST [4557] LOG:  starting PostgreSQL 14.8 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2024-01-12 11:06:53.031 EST [4557] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-12 11:06:53.031 EST [4557] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-12 11:06:53.031 EST [4557] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-12 11:06:53.033 EST [4558] LOG:  database system was shut down at 2024-01-12 11:06:52 EST
+2024-01-12 11:06:53.035 EST [4557] LOG:  database system is ready to accept connections
+2024-01-12 11:09:01.788 EST [4944] FATAL:  database "TestServer" does not exist
+2024-01-12 11:09:06.280 EST [4953] FATAL:  database "TestServer" does not exist
+2024-01-12 11:09:07.525 EST [4954] FATAL:  database "TestServer" does not exist
+2024-01-12 11:09:23.550 EST [4969] FATAL:  database "TestServer" does not exist
+2024-01-12 11:09:29.336 EST [4970] FATAL:  database "TestServer" does not exist
+2024-01-12 11:10:11.945 EST [4557] LOG:  received fast shutdown request
+2024-01-12 11:10:11.946 EST [4557] LOG:  aborting any active transactions
+2024-01-12 11:10:11.947 EST [4557] LOG:  background worker "logical replication launcher" (PID 4564) exited with exit code 1
+2024-01-12 11:10:11.947 EST [4559] LOG:  shutting down
+2024-01-12 11:10:11.952 EST [4557] LOG:  database system is shut down
+2024-01-12 11:10:26.417 EST [5037] LOG:  starting PostgreSQL 14.8 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2024-01-12 11:10:26.419 EST [5037] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-12 11:10:26.419 EST [5037] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-12 11:10:26.420 EST [5037] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-12 11:10:26.423 EST [5038] LOG:  database system was shut down at 2024-01-12 11:10:24 EST
+2024-01-12 11:10:26.425 EST [5037] LOG:  database system is ready to accept connections
+2024-01-12 11:10:55.384 EST [5184] FATAL:  database "TestServer" does not exist
+2024-01-12 11:11:27.973 EST [5235] FATAL:  database "TestServer" does not exist
+2024-01-12 11:11:35.640 EST [5312] ERROR:  relation "public.Post" does not exist at character 83
+2024-01-12 11:11:35.640 EST [5312] STATEMENT:  SELECT "public"."Post"."id", "public"."Post"."title", "public"."Post"."body" FROM "public"."Post" WHERE ("public"."Post"."id" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2024-01-12 11:14:18.299 EST [5661] LOG:  could not receive data from client: Connection reset by peer
+2024-01-12 11:14:18.318 EST [5663] ERROR:  relation "_prisma_migrations" does not exist at character 126
+2024-01-12 11:14:18.318 EST [5663] STATEMENT:  SELECT "id", "checksum", "finished_at", "migration_name", "logs", "rolled_back_at", "started_at", "applied_steps_count" FROM "_prisma_migrations" ORDER BY "started_at" ASC
+2024-01-12 11:35:03.259 EST [7105] ERROR:  relation "public.affiliate" does not exist at character 232
+2024-01-12 11:35:03.259 EST [7105] STATEMENT:  SELECT "public"."affiliate"."id", "public"."affiliate"."createdAt", "public"."affiliate"."updatedAt", "public"."affiliate"."name", "public"."affiliate"."link", "public"."affiliate"."thumbnailKey", "public"."affiliate"."order" FROM "public"."affiliate" WHERE 1=1 ORDER BY "public"."affiliate"."order" ASC OFFSET $1
+2024-01-12 11:35:14.222 EST [7105] ERROR:  relation "public.affiliate" does not exist at character 232
+2024-01-12 11:35:14.222 EST [7105] STATEMENT:  SELECT "public"."affiliate"."id", "public"."affiliate"."createdAt", "public"."affiliate"."updatedAt", "public"."affiliate"."name", "public"."affiliate"."link", "public"."affiliate"."thumbnailKey", "public"."affiliate"."order" FROM "public"."affiliate" WHERE 1=1 ORDER BY "public"."affiliate"."order" ASC OFFSET $1
+2024-01-12 11:35:22.626 EST [5037] LOG:  received fast shutdown request
+2024-01-12 11:35:22.626 EST [5037] LOG:  aborting any active transactions
+2024-01-12 11:35:22.626 EST [5780] FATAL:  terminating connection due to administrator command
+2024-01-12 11:35:22.626 EST [5037] LOG:  background worker "logical replication launcher" (PID 5044) exited with exit code 1
+2024-01-12 11:35:22.627 EST [5039] LOG:  shutting down
+2024-01-12 11:35:22.631 EST [5037] LOG:  database system is shut down
+2024-01-12 11:37:24.535 EST [7424] LOG:  starting PostgreSQL 14.8 on aarch64-apple-darwin20.6.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2024-01-12 11:37:24.537 EST [7424] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-12 11:37:24.537 EST [7424] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-12 11:37:24.537 EST [7424] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-12 11:37:24.541 EST [7425] LOG:  database system was shut down at 2024-01-12 11:35:22 EST
+2024-01-12 11:37:24.544 EST [7424] LOG:  database system is ready to accept connections
+2024-01-12 13:35:32.277 EST [7424] LOG:  received fast shutdown request
+2024-01-12 13:35:32.277 EST [7424] LOG:  aborting any active transactions
+2024-01-12 13:35:32.279 EST [7424] LOG:  background worker "logical replication launcher" (PID 7431) exited with exit code 1
+2024-01-12 13:35:32.279 EST [7426] LOG:  shutting down
+2024-01-12 13:35:32.285 EST [7424] LOG:  database system is shut down
